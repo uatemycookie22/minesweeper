@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BoardDimensions } from './board/board.utils';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'minesweeper';
+  title = 'Minesweeper';
+  boardDimensions: BoardDimensions = {x: 10, y: 10}
 }

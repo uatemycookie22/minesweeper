@@ -1,0 +1,14 @@
+<div *ngIf="gameActive">
+    <div class="grid-container">
+        <div 
+            class ="square" 
+            *ngFor="let square of squares" 
+            (click)="onClick($event, square)"
+            [ngStyle] = "{'background-color': (square.isRevealed) ? '#ffffff' : '#cad1d1'}"
+        >
+            <p *ngIf="square.isRevealed">
+                {{square.surroundingMines}}
+            </p>
+        </div>
+    </div>
+</div>

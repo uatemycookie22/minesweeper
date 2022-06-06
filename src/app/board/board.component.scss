@@ -1,0 +1,16 @@
+
+.grid-container{
+    margin: auto;
+
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(10, 50px);
+    gap: 1px;
+    grid-auto-rows: 50px;
+
+    .square{
+        background-color: #cad1d1;
+        text-align: center;
+    }
+}
